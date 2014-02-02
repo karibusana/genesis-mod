@@ -11,12 +11,12 @@ function custom_post_info( $post_info ) {
 	if ( $u_modified_time >= $u_time + 86400 ) { 
 		$post_date = get_the_modified_time( 'j F, Y' ); 
 		$post_info =  __( 'Aggiornato', 'genesis' ) . ' [post_author_posts_link] ' . __( 'il ', 'genesis' ) . $post_date .' [post_comments] [post_edit]';
-		return $post_info; 
+		 
 	}
 	else { 
 		$post_date = get_the_time( 'j F, Y' );
 		$post_info =  __( 'Da', 'genesis' ) . ' [post_author_posts_link] ' . __( 'il ', 'genesis' ) . $post_date .' [post_comments] [post_edit]';
-		return $post_info;
+		
 		 
 	}
 	
